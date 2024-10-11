@@ -18,7 +18,7 @@ public class Wine : MonoBehaviour,IInteractable
     [SerializeField] public float[] prop = { 0.0f, 0.0f, 0.0f};
 
     /// <summary>
-    /// Estou usando este se para fazer uma copia dos objetos vinho para serem armazenados nos gameObjects da scene
+    /// Estou usando esta função para fazer uma copia dos objetos vinho para serem armazenados nos gameObjects da scene
     /// </summary>
     /// <param name="targetId"></param>
     /// <param name="targetType"></param>
@@ -36,7 +36,7 @@ public class Wine : MonoBehaviour,IInteractable
     /// </summary>
     public void Interact() 
     {
-        Debug.Log("Vinho" + id + ": Tipo: " + type.ToString() + ",alcohol: " + prop[0].ToString() + ",malicAcid: " + prop[1].ToString() + ",ash: " + prop[2].ToString());
+        Debug.Log("Vinho " + id + ": Tipo: " + type.ToString() + ",alcohol: " + prop[0].ToString() + ",malicAcid: " + prop[1].ToString() + ",ash: " + prop[2].ToString());
     }
 
 }

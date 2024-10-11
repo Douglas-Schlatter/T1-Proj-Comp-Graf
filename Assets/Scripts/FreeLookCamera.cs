@@ -29,7 +29,7 @@ public class FreeLookCamera : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
 
-        playerBody.Rotate(Vector3.up * mouseX); //Rotacionar de fato
+        playerBody.Rotate(Vector3.up * mouseX); //Rotacionar o objeto que a camera esta fixado
 
         //Aqui estou pegando os inputs de movimentação
         float x = Input.GetAxis("Horizontal");
